@@ -9,6 +9,7 @@ def set_date_entry(id: int):
     date = randint((temp * 10)+1, (temp + 1) * 10)
     return f"'{const.DATE_PREFIX}-{date}'"
 
+
 def get_from_row_company_data(row: list):
     """
     Getting Company_data from row

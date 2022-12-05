@@ -1,4 +1,5 @@
 import os
+from abc import ABCMeta, abstractmethod
 from openpyxl import load_workbook
 
 from config import constants as const
@@ -14,3 +15,9 @@ class ExcelData:
         data = list(ws.rows)[const.EXCEL_FIRST_ROW:]
 
         return data
+
+
+class ExcelTables:
+    @abstractmethod
+    def get_from_row(self):
+        pass

@@ -1,4 +1,3 @@
-import enum
 import datetime
 from dataclasses import dataclass, field
 
@@ -36,10 +35,3 @@ class Forecast(Mixin):
     forecast_qoil_data1: int
     forecast_qoil_data2: int
 
-
-class TableTypes(str, enum.Enum):
-    """Table types"""
-
-    COMPANY_TABLE = 'company_data'
-    FACT_TABLE = 'fact'
-    FORECAST_TABLE = 'forecast'
