@@ -1,4 +1,6 @@
 EXCEL_FILEPATH='companies_data.xlsx'
+EXCEL_SHEET_NUMBER=0
+EXCEL_FIRST_ROW=3
 EXCEL_ID=0
 EXCEL_COMPANY=1
 EXCEL_FACT_QLIB_DATA1=2
@@ -12,3 +14,5 @@ EXCEL_FORECAST_QOIL_DATA2=9
 
 TABLES = ('company_data', 'fact', 'forecast')
 TOTAL_TABLES = ('fact', 'forecast')
+
+DATE_PREFIX = '2022-12'
