@@ -49,7 +49,7 @@ def create_table_forecast(conn):
     conn.commit()
 
 
-def create_update_company_data(conn, row: CompanyData):
+def update_company_data(conn, row: CompanyData):
     """
     :param conn:
     :param row: CompanyData
@@ -63,7 +63,7 @@ def create_update_company_data(conn, row: CompanyData):
     conn.commit()
 
 
-def create_update_fact(conn, row: Fact):
+def update_fact(conn, row: Fact):
     """
     :param conn:
     :param row: Fact
@@ -87,7 +87,7 @@ def create_update_fact(conn, row: Fact):
     conn.commit()
 
 
-def create_update_forecast(conn, row: Fact):
+def update_forecast(conn, row: Fact):
     """
     :param row: Forecast
     :return: None
