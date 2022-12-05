@@ -12,3 +12,5 @@ EXCEL_FORECAST_QOIL_DATA2=9
 
 TABLES = ('company_data', 'fact', 'forecast')
 TOTAL_TABLES = ('fact', 'forecast')
+
+DATE_PREFIX = '2022-12'

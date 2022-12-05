@@ -41,6 +41,8 @@ class SQLiteLoader:
         for table in TOTAL_TABLES:
             table_func = TableTypes(table)
             row_totals = get_total_mapping[table_func](self.conn)
-            totals = list(row_totals)
-            dict_result[table] = totals
+            for row_total in row_totals:
+                totals = list(row_total)
+                date_entry = totals.pop()
+                dict_result[table, date_entry] = totals
         return dict_result
