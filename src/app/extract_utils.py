@@ -1,4 +1,5 @@
 from random import randint
+
 from config import constants as const
 from models.db_models import CompanyData, Fact, Forecast
 
